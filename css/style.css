@@ -1,0 +1,209 @@
+body{
+    background-color: lavender;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 30px;
+    color: black;
+}
+
+h1{
+    text-align: center;
+    font-size: 50pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    border: 10px double white;
+}
+
+p{
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+h2{
+    color: purple;
+    font-size: 30pt;
+    padding: 8px;
+    text-align: center;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
+}
+
+h4{
+    font-size: 110%;
+    font-style: italic;
+}
+
+nav{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    font-size: 20px;
+    padding: 0px;
+}
+
+nav li {
+    padding: 5px;
+    display: inline-block;
+}
+
+.skip{
+    display: none;
+}
+
+nav a {
+    background-color: whitesmoke;
+    color: purple;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+a{
+    text-decoration: underline;
+    color: blue;
+}
+
+.head{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ol{
+    list-style-type: lower-alpha;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+nav a.current{
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+h1:active{
+    transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    h1, h1:hover {
+        transform: none;
+    }
+
+    .gifs{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .skip {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .petphotos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+    }
+
+    .recipephotos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .recipetext {
+        background-color: whitesmoke;
+        border-top: 2pt solid darkgray;
+        margin-top: 20pt;
+    }
+    
+    .pettext {
+        background-color: whitesmoke;
+        border-bottom: 2pt solid darkgray;
+        margin-top: 20pt;
+    }
+
+    .traveltext {
+        background-color: whitesmoke;
+        margin-top: 20pt;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      }
+      
+      /* The navigation menu links */
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      /* When you mouse over the navigation links, change their color */
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      /* Position and style the close button (top right corner) */
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      span {
+        text-decoration: underline;
+        color: blue;
+      }
+  }
